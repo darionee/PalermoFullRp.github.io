@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palermo Full Rp</title>
+    <link rel="icon" type="image/png" href="media/Composizione-1.gif">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/palermo-roleplay.gif" alt="logo"></a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#about" class="desktop_navbar_link scroll">Chi siamo</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">Unisciti!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/palermo-roleplay.gif" alt="logo"></a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Chi siamo</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Unisciti</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/palermo-roleplay.gif" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>Palermo Full Rp<br>come</a>
+          <a class="main1_actcent">non lo hai mai visto prima</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">Palermo Full Rp</span>
+            <br>
+            <span class="main1_ipcopier_text2">Clicca per copiare</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("Palermo Full Rp");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('ID copiato negli appunti!'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Cosa abbiamo?</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/discord.png">
+            <a class="main2_feature_headline">Discord</a>
+            <a class="main2_feature_text">Entra nel nostro server discord per fare nuove amicizie e poi per esplorare un po il server.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/fazioni.webp">
+            <a class="main2_feature_headline">Fazioni</a>
+            <a class="main2_feature_text">Abbiamo tante fazioni tra cui: gang, mafia oppure cartelli. Invece come lavori legali: polizia, ems...</a>
+          </div>
+
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/regolamento.png">
+            <a class="main2_feature_headline">Regolamento</a>
+            <a class="main2_feature_text">Studiati il regolamento per fare un buon rp. Il regolamento lo troverai nel discord</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/palermo-roleplay.gif">
+            <a class="main2_feature_headline">E molto altro...</a>
+            <a class="main2_feature_text">Solo entrando su Palermo Full Rp, potrai scoprire tutto il suo potenziale!</a>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Entra nel Discord!</a>
+        <div class="main4_dc_div">
+            <iframe src="https://discordapp.com/widget?id=1173005759722815498&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Palermo Full Rp</a>
+            <a class="main4_dc_description"> ・Conosci Nuovi player <br> ・Fai Tanto rp <br> ・Essere notificato di nuovi update <br> ・Giveaway  <br><br> e molto altro... </a>
+            <a href="https://discord.gg/GCFWgcgV8P" class="main4_dc_button_a">
+              <div class="main4_dc_button">Unisciti</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Chi siamo</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="media/foto profilo.png">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">Owner</a>
+              <a class="main5_admins_description_title">Ilpensa</a>
+              <a class="main5_admins_description"><br>Ciao a tutti ragazzi sono l'owner di questo server rp, ma anche programmatore di questo sito web. fai un salto nel server per giocarci.</a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="media/algida.png">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">CO-OWNER</a>
+              <a class="main5_admins_description_title">Algida</a>
+              <a class="main5_admins_description"><br>sono algida giocatore appassionato da fiveM grafico e e intraprendente vfx</a>
+            </div>
+          </div>
+        </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">Come unirsi al server</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Fivem</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>app:</a>
+                <a>nome server:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>fivem</a>
+                <a>Palermo Full Rp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright_div">
+      <a class="copyright">Made by Ilpensa</a>
+    </footer>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e45b8c52-1b1b-4f7f-93ba-89b95a8f7277" data-elfsight-app-lazy></div>
+
+  </body>
+</html>
